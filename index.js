@@ -42,6 +42,19 @@ const dataBase = {
 };
 
 // Chart JS docu:
+const xlabels = Array.from({ length: 442 }, (v, k) => k + 1);
+const ylabels = dataBase.data;
+const data = {
+  labels: xlabels,
+  datasets: [
+    {
+      label: `${dataBase.channel} Channel Data from ${dataBase.device} device`,
+      backgroundColor: "rgb(0, 0, 0)",
+      borderColor: "rgb(255, 255, 255)",
+      data: ylabels,
+    },
+  ],
+};
 
 const config = {
   type: "line",

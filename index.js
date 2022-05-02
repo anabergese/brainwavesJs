@@ -60,6 +60,9 @@ const config = {
   type: "line",
   data: data,
   options: {   
+    borderWidth: 0.9,
+    pointBorderWidth: 0,
+    pointRadius: 0,
     tension: 1,
     scales: {
       y: {

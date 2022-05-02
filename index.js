@@ -59,7 +59,8 @@ const data = {
 const config = {
   type: "line",
   data: data,
-  options: {
+  options: {   
+    tension: 1,
     scales: {
       y: {
         min: Math.min.apply(null, ylabels),

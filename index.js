@@ -73,7 +73,6 @@ const config = {
       },
       x: {
         beginAtZero: true,
-        // max: dataBase.size,
       },
     },
   },

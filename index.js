@@ -59,7 +59,7 @@ const data = {
 const config = {
   type: "line",
   data: data,
-  options: {   
+  options: {
     borderWidth: 0.9,
     pointBorderWidth: 0,
     pointRadius: 0,
@@ -69,7 +69,7 @@ const config = {
         min: Math.min.apply(null, ylabels),
         max: Math.max.apply(null, ylabels),
         ticks: {
-          // Include a Hz sign in the ticks
+          // Include a Hz sign in the ticks. I need to review the mesure.
           callback: function (value, index, ticks) {
             return value + " Hz";
           },

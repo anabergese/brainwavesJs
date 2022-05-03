@@ -4,17 +4,33 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
   </head>
-  <body style="background-color: rgb(210, 189, 189)">
+  <style>
+    body {
+      background-color: rgb(210, 189, 189);
+    }
+    table,
+    th,
+    td {
+      border: 0.5px solid grey;
+    }
+
+    .center {
+      width: 80vw;
+      margin-left: 10vw;
+      margin-bottom: 80px;
+    }
+  </style>
+  <body>
     <h1>Brain Waives</h1>
     <h2>Event: 132822</h2>
     <p>
       Used to distinguish the same event captured at different brain locations
       (channels)
     </p>
-    <div style="width: 80vw; margin-left: 10vw">
+    <div class="center">
       <canvas id="myChart"></canvas>
     </div>
-    <table style="width: 100%">
+    <table class="center">
       <tr>
         <th>Event</th>
         <th>Device</th>

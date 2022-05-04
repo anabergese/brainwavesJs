@@ -69,9 +69,9 @@ const config = {
         min: Math.min.apply(null, ylabels),
         max: Math.max.apply(null, ylabels),
         ticks: {
-          // Include a Hz sign in the ticks. I need to review the mesure.
+          // Include a Hz sign in the ticks. I need to review the mesure. Should be: return value + " Hz";
           callback: function (value, index, ticks) {
-            return value + " Hz";
+            return value;
           },
         },
       },

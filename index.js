@@ -71,7 +71,7 @@ const config = {
         ticks: {
           // Include a Hz sign in the ticks. I need to review the mesure. Should be: return value + " Hz";
           callback: function (value, index, ticks) {
-            return value;
+            return value + " µV";
           },
         },
       },

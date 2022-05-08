@@ -22,3 +22,12 @@ td {
 #myChartId978114 {
   background-color: #0faef2;
 }
+
+.number {
+  border-color: white;
+  border-width: 1;
+  border-style: solid;
+  background-color: #042a54;
+  margin: 24px 300px;
+  font-size: 32px;
+}

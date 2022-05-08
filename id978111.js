@@ -9,9 +9,10 @@ const data = {
   labels: xlabels,
   datasets: [
     {
-      label: `<h1>${id978111.channel} Channel Data</h1>`,
-      backgroundColor: "rgb(0, 0, 0)",
+      label: `${id978111.channel} Channel Data`,
+      backgroundColor: "rgb(255, 255, 255)",
       borderColor: "rgb(255, 255, 255)",
+      color: "rgb(255, 255, 255)",
       data: ylabels,
     },
   ],
@@ -31,7 +32,7 @@ const config = {
     scales: {
       y: {
         min: Math.min.apply(null, ylabels),
-        max: Math.max.apply(null, ylabels),
+        max: 10 + Math.max.apply(null, ylabels),
         ticks: {
           // Include a Hz sign in the ticks. I need to review the mesure. Should be: return value + " Hz";
           callback: function (value, index, ticks) {

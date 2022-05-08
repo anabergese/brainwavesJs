@@ -9,7 +9,7 @@ const data = {
   labels: xlabels,
   datasets: [
     {
-      label: `${id978111.channel} Channel Data from ${id978111.device} device`,
+      label: `<h1>${id978111.channel} Channel Data</h1>`,
       backgroundColor: "rgb(0, 0, 0)",
       borderColor: "rgb(255, 255, 255)",
       data: ylabels,

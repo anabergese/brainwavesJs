@@ -1,8 +1,11 @@
 body {
-  background-color: #02152a;
-  color: white;
+  background-color: #dde0e3;
+  color: rgb(13, 12, 12);
   font-family: sans-serif;
-  text-align: center;
+  text-align: justify;
+  width: 80vw;
+  margin-left: 10vw;
+  margin-bottom: 80px;
 }
 table,
 th,
@@ -10,24 +13,9 @@ td {
   border: 0.5px solid grey;
 }
 
-.center {
-  width: 80vw;
-  margin-left: 10vw;
-  margin-bottom: 80px;
-}
-
 #myChartId978111,
 #myChartId978112,
 #myChartId978113,
 #myChartId978114 {
   background-color: #0faef2;
-}
-
-.number {
-  border-color: white;
-  border-width: 1;
-  border-style: solid;
-  background-color: #042a54;
-  margin: 24px 300px;
-  font-size: 32px;
 }

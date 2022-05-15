@@ -1,9 +1,10 @@
 "use strict";
 import { dataBase } from "./dataSet.js"; // or './module'
+import { linspace } from "./linspace"
 
 // Chart id978113:
 const id978113 = dataBase[2];
-const xlabels = Array.from({ length: id978113.size }, (v, k) => k + 1);
+const xlabels = linspace(0, 2, id978113.size)
 const ylabels = id978113.data;
 const data = {
   labels: xlabels,

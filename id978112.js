@@ -1,6 +1,6 @@
 "use strict";
 import { dataBase } from "./dataSet.js"; // or './module'
-import { linspace } from "./linspace"
+import { linspace } from "./linspace.js"
 
 // Chart id978112:
 const id978112 = dataBase[1];

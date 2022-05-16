@@ -1,5 +1,7 @@
 body {
   background: linear-gradient(65deg, rgba(64,51,184,1) 0%, rgba(17,9,88,1) 49%, rgba(0,0,0,1) 100%);   color: rgb(255, 255, 255);
+  /* background: rgb(48,44,91);
+  background: radial-gradient(circle, rgba(48,44,91,1) 0%, rgba(17,9,88,1) 100%); */
   font-family: 'TT Hoves', sans-serif;
   text-align: justify;
   width: 80vw;
@@ -30,7 +32,7 @@ td {
 #myChartId978113,
 #myChartId978114 {
   background: rgb(57,52,93);
-  background: linear-gradient(180deg, rgba(57,52,93,1) 0%, rgba(27,25,51,1) 55%);
+  background: linear-gradient(180deg, rgba(57,52,93,0.8) 0%, rgba(27,25,51,0.8) 55%);
   margin-bottom: 18px;
   border-radius: 4px;
 }

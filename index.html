@@ -9,65 +9,7 @@
 
   </head>
   <body>
-    <h1>Brain Waives</h1>
-
-    <h2>Problem:</h2>
-    <p>
-      I want to build a chart amplitud over time. Y axis: amplitud and X axis:
-      time.
-    </p>
-    <p>I do not know how to match the amplitud data with the seconds.</p>
-    <h2>Aproach:</h2>
-    <p>
-      The owner of the data base told me: if you want to have a correlation with
-      real “seconds” you will need to interpolate all the samples to match only
-      440 samples (2 seconds). (trough the capture they were indeed 2 real
-      computers timestamped seconds at in theory 220hz, that’s way Interpolation
-      is recommended) 👀
-    </p>
-    <h2>What I did:</h2>
-    <p>
-      For example, for the event 13669 I matched all the Data values (amplitud,
-      in Y axis) with the Size (X axis) 👀
-    </p>
-
-    <p>
-      <b>Size:</b>
-      An integer, to identify the size in number of values captured in the 2
-      seconds of this signal, since the Hz of each device varies, in "theory"
-      the value is close to 220Hz for Muse.
-    </p>
-
-    <h2>Data base example:</h2>
-    <p>
-      Complete description of data
-      <a href="http://mindbigdata.com/opendb/index.html">here</a>
-    </p>
-    <table style="width: 70%">
-      <tr>
-        <th>Id</th>
-        <th>Event</th>
-        <th>Device</th>
-        <th>Channel</th>
-        <th>Code</th>
-        <th>Size</th>
-        <th>Data</th>
-      </tr>
-      <tr>
-        <td>978111</td>
-        <td>132669</td>
-        <td>Muse 2016</td>
-        <td>TP9</td>
-        <td>6</td>
-        <td>459</td>
-        <td>
-          475, 474, 477, 486, 486, 476, 479, 483, 489, 483, 482, 485, 486, 483,
-          474, 475, 484, 481, 482, 478, 476, 479, 487, 481, 480, 479, 487, 486,
-          471, 487, 491, 488, 491, 470, 460, 485, 484, 482, 485, 480, 487, 488,
-          479, 471, 479, 485, 484, 484....etc
-        </td>
-      </tr>
-    </table>
+    <h1 class="title">Brain Waves Practice</h1>
 
     <h3>Event: 132669. Duration: 2000ms.</h3>
     <p>
@@ -75,17 +17,6 @@
       thinking about it, using Muse 2016 device.
     </p>
     <div>
-      <img
-        src="MuseDevice.png"
-        alt="Muse Device"
-        style="
-          margin-bottom: 18px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto;
-          width: 50%;
-        "
-      />
       <canvas id="myChartId978111"></canvas>
       <canvas id="myChartId978112"></canvas>
       <canvas id="myChartId978113"></canvas>

@@ -1,12 +1,24 @@
 body {
-  background-color: #dde0e3;
-  color: rgb(13, 12, 12);
-  font-family: sans-serif;
+  background: linear-gradient(65deg, rgba(64,51,184,1) 0%, rgba(17,9,88,1) 49%, rgba(0,0,0,1) 100%);   color: rgb(255, 255, 255);
+  font-family: 'TT Hoves', sans-serif;
   text-align: justify;
   width: 80vw;
   margin-left: 10vw;
   margin-bottom: 80px;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.8px;
 }
+
+.title {
+  font-family: 'TT Hoves', sans-serif;
+  text-align: center;
+  font-size: 3rem;
+  line-height: 131%;
+  font-weight: 500;
+  margin: 20px 0 16px;
+  letter-spacing: 1px;
+}
+
 table,
 th,
 td {
@@ -17,5 +29,13 @@ td {
 #myChartId978112,
 #myChartId978113,
 #myChartId978114 {
-  background-color: #0faef2;
+  background: rgb(57,52,93);
+  background: linear-gradient(180deg, rgba(57,52,93,1) 0%, rgba(27,25,51,1) 55%);
+  margin-bottom: 18px;
+  border-radius: 4px;
 }
+
+/* Important colors for app:
+#39345d
+#1b1933 */
+

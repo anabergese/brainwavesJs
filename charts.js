@@ -7,7 +7,7 @@ import { linspace } from "./linspace.js"
 for (let i = 0; i <= dataBase.length; i++) {
 
     
-    const xlabels = linspace(0, 2, dataBase[i].size);
+    const xlabels = linspace(0, 2000, dataBase[i].size);
     const ylabels = dataBase[i].data;
     const data = {
       labels: xlabels,
@@ -16,8 +16,9 @@ for (let i = 0; i <= dataBase.length; i++) {
           label: `${dataBase[i].channel} Channel Data`,
           backgroundColor: "rgb(255, 255, 255)",
           borderColor: "rgb(255, 255, 255)",
-          color: "rgb(255, 255, 255)",
+          // #51B48C nice color but should be gradient
           data: ylabels,
+          borderWidth: 1.2,
         },
       ],
     };
@@ -30,6 +31,17 @@ for (let i = 0; i <= dataBase.length; i++) {
         pointBorderWidth: 0,
         pointRadius: 0,
         tension: 1,
+        plugins: {
+            legend: {
+                display: true,
+                labels: {
+                    color: "rgb(255, 255, 255)",
+                    font: {
+                      size: 20,
+                  }
+                }
+            }
+        },
         layout: {
           padding: 50,
         },
@@ -37,15 +49,29 @@ for (let i = 0; i <= dataBase.length; i++) {
           y: {
             min: Math.min.apply(null, ylabels),
             max: 10 + Math.max.apply(null, ylabels),
+            title: {
+              display: true,
+              text: "Amplitud (µV)",
+              color: "#FFFFFF",  
+            },
             ticks: {
+              color: "#FFFFFF80",
               // Include a Hz sign in the ticks. I need to review the mesure. Should be: return value + " Hz";
-              callback: function (value, index, ticks) {
-                return `${value} µV`;
-              },
+             // callback: function (value, index, ticks) {
+             //   return `${value} µV`;
+             // },
             },
           },
           x: {
             beginAtZero: true,
+            title: {
+              display: true,
+              text: "Time (ms)",
+              color: "#FFFFFF",  
+            },
+            ticks: {
+              color: "#FFFFFF80",              
+            },
           },
         },
       },

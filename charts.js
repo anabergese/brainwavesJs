@@ -1,8 +1,6 @@
 "use strict";
 import { dataBase } from "./dataSet.js"; 
-import { linspace } from "./linspace.js"
-
-
+import { linspace } from "./linspace.js";
 
 for (let i = 0; i <= dataBase.length; i++) {
 
@@ -14,9 +12,8 @@ for (let i = 0; i <= dataBase.length; i++) {
       datasets: [
         {
           label: `${dataBase[i].channel} Channel Data`,
-          backgroundColor: "rgb(255, 255, 255)",
-          borderColor: "rgb(255, 255, 255)",
-          // #51B48C nice color but should be gradient
+          backgroundColor: "#00B2B4",
+          borderColor: "#00B2B4",
           data: ylabels,
           borderWidth: 1.2,
         },
@@ -81,3 +78,4 @@ for (let i = 0; i <= dataBase.length; i++) {
    
 
 }
+
